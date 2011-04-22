@@ -1,3 +1,1 @@
-Rails.application.class.configure do
-  config.serve_static_assets = true
-end
+Rails.application.class.config.serve_static_assets = true
