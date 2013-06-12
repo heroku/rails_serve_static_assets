@@ -14,4 +14,5 @@ Gem::Specification.new do |gem|
   gem.name          = "rails_serve_static_assets"
   gem.require_paths = ["lib"]
   gem.version       = RailsServeStaticAssets::VERSION
+  gem.license       = 'LICENSE'
 end
