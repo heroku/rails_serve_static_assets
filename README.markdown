@@ -1,4 +1,8 @@
 # Serve Static Assets
 
-Rails 3 gem to enable serving of static assets. Can also be used as a
-plugin.
+Rails gem to enable serving of static assets
+
+Supports:
+
+- Rails 3
+- Rails 4
