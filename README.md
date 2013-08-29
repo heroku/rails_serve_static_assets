@@ -35,13 +35,14 @@ On a 12factor platform, Nginx is not required to run your application. Your app 
 
 By default Rails4 will return a 404 if an asset is not handled via an external proxy such as Nginx. While this default behavior may help you debug your Nginx configuration, it makes a default Rails app with assets unusable on a 12factor platform. To fix this we've released a gem `rails_serve_static_assets`.
 
-This gem, `rails_serve_static_assets`, enables your Rails server to deliver your assets instead of returning a 404. You can use this to populate an edge cache CDN, or serve files directly from your web app. This gives your app total control and allows you to do things like redirects, or setting headers in your Ruby code. To enable this behavior in your app we only need to set this one configuration option through this gem:
+This gem, `rails_serve_static_assets`, enables your Rails server to deliver your assets instead of returning a 404. You can use this to populate an edge cache CDN, or serve files directly from your web app. This gives your app total control and allows you to do things like redirects, or setting headers in your Ruby code. To enable this behavior in your app we only need to set two configuration options through this gem:
 
 ```
 config.serve_static_assets = true
+config.action_dispatch.x_sendfile_header = nil
 ```
 
-Note: this gem will set this value for you, you don't need to change any configuration manually.
+Note: this gem will set these values for you, you don't need to change any configuration manually.
 
 All you need to do to get this functionality of both gems is add the `rails_12factor` gem to your project.
 
