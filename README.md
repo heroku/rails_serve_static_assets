@@ -25,7 +25,7 @@ Then run
 $ bundle install`
 ```
 
-You also need the `rails_stdout_logging` gem. You can get both of them together by installing `rails_on_heroku` gem.
+You also need the `rails_stdout_logging` gem. You can get both of them together by installing `rails_12factor` gem.
 
 ## Rails 4 Serve Static Assets
 
