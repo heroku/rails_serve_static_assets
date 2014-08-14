@@ -22,7 +22,7 @@ gem 'rails_serve_static_assets'
 Then run
 
 ```
-$ bundle install`
+$ bundle install
 ```
 
 You also need the `rails_stdout_logging` gem. You can get both of them together by installing [`rails_12factor`](https://github.com/heroku/rails_12factor) gem.
