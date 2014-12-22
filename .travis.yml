@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.1.5
+gemfile:
+  - Gemfile
+  - gemfiles/rails3_2.gemfile
+  - gemfiles/rails4_0.gemfile
+  - gemfiles/rails4_1.gemfile
+  - gemfiles/rails4_2.gemfile
+script: bundle exec ruby test/rails_serve_static_assets_test.rb
