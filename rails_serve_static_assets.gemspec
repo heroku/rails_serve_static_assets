@@ -15,4 +15,8 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = RailsServeStaticAssets::VERSION
   gem.license       = 'MIT'
+
+  gem.add_development_dependency "rails",     [">= 3.1"]
+  gem.add_development_dependency "capybara",  [">= 0"]
+  gem.add_development_dependency "sprockets", [">= 0"]
 end
