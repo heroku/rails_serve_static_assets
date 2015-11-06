@@ -1,7 +1,10 @@
 module RailsServeStaticAssets
   class Railtie < Rails::Railtie
     config.before_initialize do
-      if Rails.version >= "4.2.0"
+      version = Rails.version
+      if version >= "5.0.0"
+        ::Rails.configuration.public_file_server.enabled = true
+      elsif version >= "4.2.0"
         ::Rails.configuration.serve_static_files = true
       else
         ::Rails.configuration.serve_static_assets = true
