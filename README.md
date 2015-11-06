@@ -6,6 +6,7 @@ Supports:
 
 - Rails 3
 - Rails 4
+- Rails 5
 
 ## What
 
