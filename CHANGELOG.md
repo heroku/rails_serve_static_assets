@@ -2,6 +2,8 @@
 
 ## Master
 
+## [0.0.5] - 2015-02-01
+
 - Added support for Rails 5.0 [#16](https://github.com/heroku/rails_serve_static_assets/pull/16)
 
 ## [0.0.4] - 2015-01-29
